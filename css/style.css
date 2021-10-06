@@ -1,38 +1,176 @@
 /* commons */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
-[fix=true]::after{
+[fix=true]::after {
     display: table;
     clear: both;
     content: "";
 }
 
+[up=first]::first-letter {
+    text-transform: uppercase;
+}
+
+[up=all] {
+    text-transform: uppercase;
+}
+
+/* white buttons settings */
+
+.white-bts > a{
+    color: black;
+    background-color: white;
+}
+
+.white-bts > a:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: blue;
+    transition: .3s;
+}
+
 /* header */
 
-header{
+header {
     position: relative;
+    background-image: url("../img/jumbo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
 }
 
-header > div{
-    place-items: center;
+/* upper header */
+
+header > div nav,
+header > .upper-header > div {
+    float: left;
 }
 
-header > div > a{
+header > .upper-header > div {
     width: 10%;
 }
 
-header > div nav{
+header > div nav {
     width: 80%;
 }
+header > .upper-header {
+    line-height: 35px;
+    margin: auto;
+    width: 90vw;
+    max-width: 1800px; /* copiato dal sito originale di discord */
+}
 
-header > div nav,
-header > div > a{
-    height: 100%;
-    float: left;
+header > .upper-header {
+    padding-top: 20px;
+}
+
+.upper-header a {
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+/* logo */
+
+.upper-header > a:first-child img {
+    display: inline-block;
+}
+
+/* navigation bar */
+
+nav > ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul > li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+li > a {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+li > a:hover {
+    border-bottom: 1px solid white;
+}
+
+nav li::first-letter {
+    text-transform: uppercase;
+}
+
+/* login button */
+
+.upper-header div:last-of-type > a {
+    padding: 10px 20px;
+    border-radius: 2em;
+    font-weight: 500;
+}
+
+
+/* jumbo section */
+
+.jumbo-text {
+    text-align: center;
+    /* background-color: blue; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+}
+
+.jumbo-text h1 {
+    margin: 40px 0;
+    font-size: 50px;
+}
+
+.jumbo-text p {
+    line-height: 30px;
+    font-weight: bold;
+    max-width: 80ch;
+}
+
+/* jumbo buttons */
+
+
+.jumbo-text > .white-bts,
+.jumbo-text > button {
+    display: inline-block;
+    margin-top: 50px;
+    border: none;
+}
+
+.jumbo-text a,
+.jumbo-text > button {
+    padding: 18px 20px;
+    border-radius: 2em;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.fas.fa-download{
+    margin-right: 10px;
+}
+
+.jumbo-text > button {
+    color: white;
+    background-color: black;
+}
+
+.jumbo-text > button:hover{
+    transition: .3s;
+    background-color: rgb(50, 50, 50);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /* main */
@@ -41,7 +179,7 @@ header > div > a{
 
 /* debug */
 
-
+/*
 header.debug{
     background-color: aqua;
     height: 50vh;
@@ -50,10 +188,9 @@ header.debug{
 header.debug > div:first-child{
     width: 90%;
     background-color: black;
-    height: 5vh;
+    height: 10vh;
     margin: auto;
-    max-width: 1260px; /* copiato dal sito originale di discord */
-}
+    max-width: 1260px;
 
 .debug div > a {
     background-color:  yellowgreen;
@@ -61,16 +198,14 @@ header.debug > div:first-child{
 
 .debug div > nav {
     background-color: violet;
-}
+}  
 
-.debug .jumbo-text {
-    height: 500px;
-    width: 70%;
-    max-width: 800px;
-    background-color: yellow;
+.debug.jumbo-text {
+    text-align: center;
+    background-color: blue;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-
 }
+*/
