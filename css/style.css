@@ -28,9 +28,25 @@
     float: right;
 }
 
+/* blue bottons setting */
+
+.blue-bts > a {
+    text-decoration: none;
+    color: white;
+    background-color: #5461ee;
+    border-radius: 2em;
+    font-weight: 500;
+}
+
+.blue-bts > a:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #646fec;
+    transition: .3s;
+}
+
 /* white buttons settings */
 
-.white-bts > a{
+.white-bts > a {
     color: black;
     background-color: white;
 }
@@ -271,14 +287,9 @@ section h2 {
 
 }
 
-#bottom-main > div:last-child > a {
-    text-decoration: none;
-    color: white;
+#bottom-main > .blue-bts > a {
     font-size: 18px;
-    background-color: #5461ee;
     padding: 18px 20px;
-    border-radius: 2em;
-    font-weight: 500;
 }
 
 /* footer */
@@ -298,6 +309,10 @@ footer {
 
 .top-end > div:not(.socials) {
     width: calc(70% / 4);
+}
+
+.top-end{
+    padding-top: 50px;
 }
 
 /* left top end with socials links */
@@ -362,6 +377,22 @@ footer {
     font-size: 19px;
 }
 
+/* bottom hr */
+
+footer hr {
+    border: 1px solid #5461ee;
+}
+
+#ending > hr {
+    margin: 30px 0;
+}
+
+/* bottom side of footer */
+
+.bottom-end > .blue-bts > a {
+    padding: 10px 15px;
+    text-align: right;
+}
 
 /* debug */
 
@@ -403,7 +434,7 @@ header.debug > div:first-child{
  .debug {
     width: 65%;
     margin: auto;
-} 
+}
 
 .debug .socials{
     width: 30%;
@@ -418,9 +449,8 @@ header.debug > div:first-child{
     height: 250px;
     background-color: rosybrown;
     border: 1px solid black;
-    
+
 }
-*/
 
 
 .debug .top-end{
@@ -436,3 +466,4 @@ header.debug > div:first-child{
     background-color: greenyellow;
     width: 30%;
 }
+*/
