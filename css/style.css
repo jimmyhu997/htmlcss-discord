@@ -5,7 +5,35 @@
     padding: 0;
 }
 
+[fix=true]::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
 /* header */
+
+header{
+    position: relative;
+}
+
+header > div{
+    place-items: center;
+}
+
+header > div > a{
+    width: 10%;
+}
+
+header > div nav{
+    width: 80%;
+}
+
+header > div nav,
+header > div > a{
+    height: 100%;
+    float: left;
+}
 
 /* main */
 
@@ -14,3 +42,35 @@
 /* debug */
 
 
+header.debug{
+    background-color: aqua;
+    height: 50vh;
+}
+
+header.debug > div:first-child{
+    width: 90%;
+    background-color: black;
+    height: 5vh;
+    margin: auto;
+    max-width: 1260px; /* copiato dal sito originale di discord */
+}
+
+.debug div > a {
+    background-color:  yellowgreen;
+}
+
+.debug div > nav {
+    background-color: violet;
+}
+
+.debug .jumbo-text {
+    height: 500px;
+    width: 70%;
+    max-width: 800px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
