@@ -166,7 +166,7 @@ nav li::first-letter {
     font-size: 18px;
 }
 
-.fas.fa-download{
+.fas.fa-download {
     margin-right: 10px;
 }
 
@@ -175,7 +175,7 @@ nav li::first-letter {
     background-color: black;
 }
 
-.jumbo-text > button:hover{
+.jumbo-text > button:hover {
     transition: .3s;
     background-color: rgb(50, 50, 50);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -184,17 +184,17 @@ nav li::first-letter {
 /* main */
 
 #container {
-    width: 75%;
+    width: 60%;
     margin: 100px auto;
 }
 
-#container > section:nth-child(n+2){
+#container > section:nth-child(n+2) {
     margin: 300px 0;
 }
 
 /* main sections commons */
 
-section > div:last-child {
+section:not(#container > section:nth-child(2)) > div:last-child {
     text-align: left;
     display: inline-block;
     width: 20%;
@@ -206,13 +206,14 @@ section p::first-letter {
     text-transform: uppercase;
 }
 
-section h2{
+section h2 {
     font-size: 35px;
     font-weight: 900;
     line-height: 50px;
 }
 
-#container > section p{
+#container > section p,
+#bottom-main > p {
     font-weight: 500;
     line-height: 25px;
     padding-top: 20px;
@@ -227,8 +228,56 @@ section h2{
 
 /* vocal chat section */
 
-#container > section:nth-child(2) > div:last-child {
-    margin-left: 60px;
+#container > section:nth-child(2) > div:first-child {
+    text-align: left;
+    display: inline-block;
+    width: 20%;
+    margin: 0px 10% 0 30px;
+}
+
+
+/* main bottom section */
+
+#bottom-main {
+    text-align: center;
+}
+
+#bottom-main > h2 {
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+#bottom-main > p {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 85ch;
+    display: inline-block;
+}
+
+
+#stars {
+    background-image: url(../img/stars.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-weight: bold;
+    font-size: 25px;
+    margin: auto;
+    width: 30%;
+    line-height: 80px;
+    margin-bottom: 40px;
+
+}
+
+#bottom-main > div:last-child > a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background-color: #5461ee;
+    padding: 18px 20px;
+    border-radius: 2em;
+    font-weight: 500;
 }
 
 /* footer */
@@ -264,9 +313,9 @@ header.debug > div:first-child{
     left: 50%;
     transform: translate(-50% , -50%);
 }
-*/
 
 .debug{
-    /* background-color: green; */
+    background-color: green;
     height: 500px;
 }
+*/
