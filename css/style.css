@@ -20,6 +20,14 @@
     text-transform: uppercase;
 }
 
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 /* white buttons settings */
 
 .white-bts > a{
@@ -175,6 +183,54 @@ nav li::first-letter {
 
 /* main */
 
+#container {
+    width: 75%;
+    margin: 100px auto;
+}
+
+#container > section:nth-child(n+2){
+    margin: 300px 0;
+}
+
+/* main sections commons */
+
+section > div:last-child {
+    text-align: left;
+    display: inline-block;
+    width: 20%;
+    margin-top: 40px;
+}
+
+section h2::first-letter,
+section p::first-letter {
+    text-transform: uppercase;
+}
+
+section h2{
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+#container > section p{
+    font-weight: 500;
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+/* group chat section */
+
+#container > section:first-of-type > div:last-child,
+#container > section:nth-child(3) > div:last-child {
+    margin-left: 10%;
+}
+
+/* vocal chat section */
+
+#container > section:nth-child(2) > div:last-child {
+    margin-left: 60px;
+}
+
 /* footer */
 
 /* debug */
@@ -198,7 +254,7 @@ header.debug > div:first-child{
 
 .debug div > nav {
     background-color: violet;
-}  
+}
 
 .debug.jumbo-text {
     text-align: center;
@@ -209,3 +265,8 @@ header.debug > div:first-child{
     transform: translate(-50% , -50%);
 }
 */
+
+.debug{
+    /* background-color: green; */
+    height: 500px;
+}
