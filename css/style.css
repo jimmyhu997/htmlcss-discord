@@ -106,7 +106,8 @@ li > a {
     font-size: 16px;
 }
 
-li > a:hover {
+nav li > a:hover,
+.top-end > div:nth-child(n+2) li > a:hover {
     border-bottom: 1px solid white;
 }
 
@@ -282,6 +283,86 @@ section h2 {
 
 /* footer */
 
+footer {
+    height: 50vh;
+    background-color: rgb(40, 40, 40);
+}
+
+#ending{
+    width: 65%;
+    margin: auto;
+}
+
+/* top end */
+
+
+.top-end > div:not(.socials) {
+    width: calc(70% / 4);
+}
+
+/* left top end with socials links */
+
+.top-end > .socials {
+    width: 30%;
+}
+
+.top-end .socials > h3 {
+    font-size: 30px;
+    max-width: 16ch;
+    font-weight: bold;
+    color: #5461ee;
+}
+
+
+.top-end .socials > div:first-of-type {
+    color: white;
+    line-height: 20px;
+}
+
+.socials img:first-child {
+    height: 15px;
+    width: 25px;
+    border-radius: 3px;
+    margin: 15px 3px 15px 0;
+}
+
+.socials span,
+.socials img {
+    vertical-align: middle;
+}
+
+.socials ul > li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+.socials li > a {
+    font-size: 20px;
+}
+
+/* top footer list colums */
+
+.top-end > div:nth-child(n+2) > ul > li {
+    list-style: none;
+    line-height: 40px;
+}
+
+.top-end > div:nth-child(n+2) li > a {
+    text-decoration: none;
+}
+
+.top-end > div:nth-child(n+2) > ul > li::first-letter{
+    text-transform: uppercase;
+}
+
+.top-end > div:nth-child(n+2) > ul > li:first-of-type{
+    color: #5461ee;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+
 /* debug */
 
 /*
@@ -318,4 +399,40 @@ header.debug > div:first-child{
     background-color: green;
     height: 500px;
 }
+
+ .debug {
+    width: 65%;
+    margin: auto;
+} 
+
+.debug .socials{
+    width: 30%;
+    height: 250px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+
+
+.debug > .top-end > div:not(.socials) {
+    height: 250px;
+    background-color: rosybrown;
+    border: 1px solid black;
+    
+}
 */
+
+
+.debug .top-end{
+    padding-top: 50px;
+}
+
+#ending > hr {
+    margin: 30px 0;
+}
+
+.debug > .bottom-end > div {
+    height: 70px;
+    background-color: greenyellow;
+    width: 30%;
+}
